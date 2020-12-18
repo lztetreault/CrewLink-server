@@ -10,7 +10,7 @@ import publicIp from 'public-ip';
 
 const httpsEnabled = !!process.env.HTTPS;
 
-const port = parseInt(process.env.PORT || (httpsEnabled ? '443' : '80'));
+const port = parseInt(process.env.PORT || (httpsEnabled ? '443' : '9736'));
 
 const sslCertificatePath = process.env.SSLPATH || process.cwd();
 const supportedVersions = readdirSync(join(process.cwd(), 'offsets')).map(file => file.replace('.yml', ''));
