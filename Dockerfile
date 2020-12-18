@@ -20,7 +20,8 @@ RUN yarn install
 RUN yarn compile
 
 # Tell the Docker engine the default port is 9736
-EXPOSE 9736
+EXPOSE 80
+
 
 # Run the app when the container starts
 CMD ["node", "dist/index.js"]
